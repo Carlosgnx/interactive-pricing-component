@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="introduction">
+        <h1 class="introduction__title">Simple, traffic-based pricing</h1>
+        <p class="introduction__text">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card__pricing-container">
+          <p class="card__pageviews">
+            <span class="card__pageviews-number">100K</span> PAGEVIEWS
+          </p>
+          <input
+            class="card__range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            step="25"
+          />
+          <div class="card__price-container">
+            <span class="card__price">$16.00</span>
+            <span class="card__sub-duration">/ month</span>
+          </div>
+        </div>
+        <div class="card__sub-duration-container">
+          <p>Monthly Billing</p>
+          <div class="card__switch">
+            <div class="card__switch-button"></div>
+          </div>
+          <p>Yearly Billing</p>
+          <span class="card__yearly-discount"
+            >-25% <span class="card__discount-text">discount</span></span
+          >
+        </div>
+        <div class="card__features-container">
+          <ul class="card__feature-list">
+            <li class="card__feature">
+              <div class="card__feature-icon"></div>
+              <p class="card__feature-text">Unlimited websites</p>
+            </li>
+            <li class="card__feature">
+              <div class="card__feature-icon"></div>
+              <p class="card__feature-text">100% data ownership</p>
+            </li>
+            <li class="card__feature">
+              <div class="card__feature-icon"></div>
+              <p class="card__feature-text">Email reports</p>
+            </li>
+          </ul>
+          <button class="card__btn-start">Start my trial</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
